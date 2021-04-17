@@ -2,7 +2,6 @@ namespace HareDu.Snapshotting.IntegrationTests
 {
     using Autofac;
     using AutofacIntegration;
-    using Core.Configuration;
     using Model;
     using NUnit.Framework;
     using Observers;
