@@ -1,17 +1,16 @@
-namespace HareDu.Perf
+namespace HareDu.Perf.Benchmarks
 {
     using System.Threading.Tasks;
     using BenchmarkDotNet.Attributes;
-    using Core;
     using Microsoft.Extensions.DependencyInjection;
 
     [Config(typeof(BenchmarkConfig))]
-    public class Benchmarks :
+    public class CreateBenchmarks :
         HareDuPerformanceTesting
     {
         readonly ServiceProvider _services;
 
-        public Benchmarks()
+        public CreateBenchmarks()
         {
             _services = GetContainerBuilder().BuildServiceProvider();
         }
