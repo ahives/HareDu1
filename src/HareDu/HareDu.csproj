@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{E2632998-AED4-4913-A62D-C2E4A6D6647D}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>HareDu</RootNamespace>
+        <AssemblyName>HareDu</AssemblyName>
+        <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="mscorlib" />
+        <Reference Include="System" />
+        <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="AckMode.cs" />
+        <Compile Include="BackingQueueMode.cs" />
+        <Compile Include="BackingQueueStatus.cs" />
+        <Compile Include="Binding.cs" />
+        <Compile Include="BindingArguments.cs" />
+        <Compile Include="BindingConfiguration.cs" />
+        <Compile Include="BindingConfigurator.cs" />
+        <Compile Include="BindingCreateAction.cs" />
+        <Compile Include="BindingCreateDefinition.cs" />
+        <Compile Include="BindingDeleteAction.cs" />
+        <Compile Include="BindingDeleteDefinition.cs" />
+        <Compile Include="BindingTarget.cs" />
+        <Compile Include="BindingType.cs" />
+        <Compile Include="BrokerObjectFactory.cs" />
+        <Compile Include="BrokerSystem.cs" />
+        <Compile Include="Channel.cs" />
+        <Compile Include="Connection.cs" />
+        <Compile Include="Consumer.cs" />
+        <Compile Include="DeleteShovelMode.cs" />
+        <Compile Include="Exchange.cs" />
+        <Compile Include="ExchangeArgumentConfigurator.cs" />
+        <Compile Include="ExchangeConfiguration.cs" />
+        <Compile Include="ExchangeConfigurator.cs" />
+        <Compile Include="ExchangeCreateAction.cs" />
+        <Compile Include="ExchangeDefinitionArguments.cs" />
+        <Compile Include="ExchangeDeleteAction.cs" />
+        <Compile Include="ExchangeDeleteCondition.cs" />
+        <Compile Include="ExchangeDeletionConfigurator.cs" />
+        <Compile Include="ExchangeRoutingType.cs" />
+        <Compile Include="ExchangeTarget.cs" />
+        <Compile Include="Extensions\BindingExtensions.cs" />
+        <Compile Include="Extensions\BrokerAdminDebuggingExtensions.cs" />
+        <Compile Include="Extensions\BrokerSystemExtensions.cs" />
+        <Compile Include="Extensions\ChannelExtensions.cs" />
+        <Compile Include="Extensions\ConnectionExtensions.cs" />
+        <Compile Include="Extensions\ConsumerExtensions.cs" />
+        <Compile Include="Extensions\EnumConversionExtensions.cs" />
+        <Compile Include="Extensions\ExchangeExtensions.cs" />
+        <Compile Include="Extensions\GlobalParameterExtensions.cs" />
+        <Compile Include="Extensions\JsonExtensions.cs" />
+        <Compile Include="Extensions\NodeExtensions.cs" />
+        <Compile Include="Extensions\OperatorPolicyExtensions.cs" />
+        <Compile Include="Extensions\PasswordHashExtensions.cs" />
+        <Compile Include="Extensions\PolicyExtensions.cs" />
+        <Compile Include="Extensions\QueueExtensions.cs" />
+        <Compile Include="Extensions\ScopedParameterExtensions.cs" />
+        <Compile Include="Extensions\ServerAdminDebuggingExtensions.cs" />
+        <Compile Include="Extensions\ServerExtensions.cs" />
+        <Compile Include="Extensions\ShovelExtensions.cs" />
+        <Compile Include="Extensions\TopicPermissionsExtensions.cs" />
+        <Compile Include="Extensions\TypeConverterExtensions.cs" />
+        <Compile Include="Extensions\UserExtensions.cs" />
+        <Compile Include="Extensions\UserPermissionsExtensions.cs" />
+        <Compile Include="Extensions\ValueCastingExtensions.cs" />
+        <Compile Include="Extensions\ValueExtensions.cs" />
+        <Compile Include="Extensions\VirtualHostExtensions.cs" />
+        <Compile Include="Extensions\VirtualHostLimitsExtensions.cs" />
+        <Compile Include="GlobalParameter.cs" />
+        <Compile Include="GlobalParameterArgumentConfigurator.cs" />
+        <Compile Include="GlobalParameterArguments.cs" />
+        <Compile Include="GlobalParameterConfigurator.cs" />
+        <Compile Include="GlobalParameterCreateAction.cs" />
+        <Compile Include="GlobalParameterDeleteAction.cs" />
+        <Compile Include="HareDuBrokerObjectInitException.cs" />
+        <Compile Include="HealthCheckAction.cs" />
+        <Compile Include="HealthCheckType.cs" />
+        <Compile Include="HighAvailabilityModes.cs" />
+        <Compile Include="HighAvailabilitySyncMode.cs" />
+        <Compile Include="IBrokerObjectFactory.cs" />
+        <Compile Include="Internal\BaseBrokerObject.cs" />
+        <Compile Include="Internal\BindingImpl.cs" />
+        <Compile Include="Internal\BrokerSystemImpl.cs" />
+        <Compile Include="Internal\ChannelImpl.cs" />
+        <Compile Include="Internal\ConnectionImpl.cs" />
+        <Compile Include="Internal\ConsumerImpl.cs" />
+        <Compile Include="Internal\ExchangeImpl.cs" />
+        <Compile Include="Internal\GlobalParameterImpl.cs" />
+        <Compile Include="Internal\Model\ApplicationImpl.cs" />
+        <Compile Include="Internal\Model\AuthenticationMechanismImpl.cs" />
+        <Compile Include="Internal\Model\BackingQueueStatusImpl.cs" />
+        <Compile Include="Internal\Model\BindingInfoImpl.cs" />
+        <Compile Include="Internal\Model\BindingRequest.cs" />
+        <Compile Include="Internal\Model\ChannelDetailsImpl.cs" />
+        <Compile Include="Internal\Model\ChannelInfoImpl.cs" />
+        <Compile Include="Internal\Model\ChannelOperationStatsImpl.cs" />
+        <Compile Include="Internal\Model\ChurnRatesImpl.cs" />
+        <Compile Include="Internal\Model\ClusterObjectTotalsImpl.cs" />
+        <Compile Include="Internal\Model\ConnectionCapabilitiesImpl.cs" />
+        <Compile Include="Internal\Model\ConnectionClientPropertiesImpl.cs" />
+        <Compile Include="Internal\Model\ConnectionDetailsImpl.cs" />
+        <Compile Include="Internal\Model\ConnectionInfoImpl.cs" />
+        <Compile Include="Internal\Model\ConsumerInfoImpl.cs" />
+        <Compile Include="Internal\Model\ExchangeInfoImpl.cs" />
+        <Compile Include="Internal\Model\ExchangeTypeImpl.cs" />
+        <Compile Include="Internal\Model\GarbageCollectionDetailsImpl.cs" />
+        <Compile Include="Internal\Model\GarbageCollectionMetricsImpl.cs" />
+        <Compile Include="Internal\Model\GlobalParameterInfoImpl.cs" />
+        <Compile Include="Internal\Model\GlobalParameterRequest.cs" />
+        <Compile Include="Internal\Model\InternalApplication.cs" />
+        <Compile Include="Internal\Model\InternalAuthenticationMechanism.cs" />
+        <Compile Include="Internal\Model\InternalBackingQueueStatus.cs" />
+        <Compile Include="Internal\Model\InternalBindingInfo.cs" />
+        <Compile Include="Internal\Model\InternalCapabilities.cs" />
+        <Compile Include="Internal\Model\InternalChannelDetails.cs" />
+        <Compile Include="Internal\Model\InternalChannelInfo.cs" />
+        <Compile Include="Internal\Model\InternalChurnRates.cs" />
+        <Compile Include="Internal\Model\InternalConnectionClientProperties.cs" />
+        <Compile Include="Internal\Model\InternalConnectionDetails.cs" />
+        <Compile Include="Internal\Model\InternalConnectionInfo.cs" />
+        <Compile Include="Internal\Model\InternalConsumerInfo.cs" />
+        <Compile Include="Internal\Model\InternalContext.cs" />
+        <Compile Include="Internal\Model\InternalExchangeInfo.cs" />
+        <Compile Include="Internal\Model\InternalExchangeType.cs" />
+        <Compile Include="Internal\Model\InternalGarbageCollectionDetails.cs" />
+        <Compile Include="Internal\Model\InternalGarbageCollectionMetrics.cs" />
+        <Compile Include="Internal\Model\InternalGlobalParameterInfo.cs" />
+        <Compile Include="Internal\Model\InternalListener.cs" />
+        <Compile Include="Internal\Model\InternalMemory.cs" />
+        <Compile Include="Internal\Model\InternalMessageStats.cs" />
+        <Compile Include="Internal\Model\InternalNodeContext.cs" />
+        <Compile Include="Internal\Model\InternalNodeHealthInfo.cs" />
+        <Compile Include="Internal\Model\InternalNodeInfo.cs" />
+        <Compile Include="Internal\Model\InternalNodeMemoryUsageInfo.cs" />
+        <Compile Include="Internal\Model\InternalObjectTotals.cs" />
+        <Compile Include="Internal\Model\InternalOperationStatsImpl.cs" />
+        <Compile Include="Internal\Model\InternalOperatorPolicyInfo.cs" />
+        <Compile Include="Internal\Model\InternalPolicyInfo.cs" />
+        <Compile Include="Internal\Model\InternalQueueConsumerDetails.cs" />
+        <Compile Include="Internal\Model\InternalQueueInfo.cs" />
+        <Compile Include="Internal\Model\InternalQueueMessageStats.cs" />
+        <Compile Include="Internal\Model\InternalQueueStats.cs" />
+        <Compile Include="Internal\Model\InternalRate.cs" />
+        <Compile Include="Internal\Model\InternalSampleRetentionPolicies.cs" />
+        <Compile Include="Internal\Model\InternalScopedParameterInfo.cs" />
+        <Compile Include="Internal\Model\InternalServerHealthInfo.cs" />
+        <Compile Include="Internal\Model\InternalServerInfo.cs" />
+        <Compile Include="Internal\Model\InternalSocketOptions.cs" />
+        <Compile Include="Internal\Model\InternalSystemOverviewInfo.cs" />
+        <Compile Include="Internal\Model\InternalTopicPermissionsInfo.cs" />
+        <Compile Include="Internal\Model\InternalTotalMemory.cs" />
+        <Compile Include="Internal\Model\InternalUserInfo.cs" />
+        <Compile Include="Internal\Model\InternalUserPermissionsInfo.cs" />
+        <Compile Include="Internal\Model\InternalVirtualHostInfo.cs" />
+        <Compile Include="Internal\Model\InternalVirtualHostLimitsInfo.cs" />
+        <Compile Include="Internal\Model\InternalVirtualHostMessageStats.cs" />
+        <Compile Include="Internal\Model\ListenerImpl.cs" />
+        <Compile Include="Internal\Model\MemoryInfoImpl.cs" />
+        <Compile Include="Internal\Model\MessageStatsImpl.cs" />
+        <Compile Include="Internal\Model\NodeContextImpl.cs" />
+        <Compile Include="Internal\Model\NodeHealthInfoImpl.cs" />
+        <Compile Include="Internal\Model\NodeInfoImpl.cs" />
+        <Compile Include="Internal\Model\NodeMemoryUsageInfoImpl.cs" />
+        <Compile Include="Internal\Model\OperatorPolicyInfoImpl.cs" />
+        <Compile Include="Internal\Model\PolicyInfoImpl.cs" />
+        <Compile Include="Internal\Model\QueueConsumerDetailsImpl.cs" />
+        <Compile Include="Internal\Model\QueueInfoImpl.cs" />
+        <Compile Include="Internal\Model\QueueMessageStatsImpl.cs" />
+        <Compile Include="Internal\Model\QueueStatsImpl.cs" />
+        <Compile Include="Internal\Model\RateImpl.cs" />
+        <Compile Include="Internal\Model\RatesMode.cs" />
+        <Compile Include="Internal\Model\SampleRetentionPoliciesImpl.cs" />
+        <Compile Include="Internal\Model\ScopedParameterInfoImpl.cs" />
+        <Compile Include="Internal\Model\ServerHealthInfoImpl.cs" />
+        <Compile Include="Internal\Model\ServerInfoImpl.cs" />
+        <Compile Include="Internal\Model\ShovelInfoImpl.cs" />
+        <Compile Include="Internal\Model\SocketOptionsImpl.cs" />
+        <Compile Include="Internal\Model\SystemOverviewInfoImpl.cs" />
+        <Compile Include="Internal\Model\TopicPermissionsInfoImpl.cs" />
+        <Compile Include="Internal\Model\TotalMemoryInfoImpl.cs" />
+        <Compile Include="Internal\Model\UserInfoImpl.cs" />
+        <Compile Include="Internal\Model\UserPermissionsInfoImpl.cs" />
+        <Compile Include="Internal\Model\VirtualHostInfoImpl.cs" />
+        <Compile Include="Internal\Model\VirtualHostLimitsInfoImpl.cs" />
+        <Compile Include="Internal\Model\VirtualHostMessageStatsImpl.cs" />
+        <Compile Include="Internal\NodeImpl.cs" />
+        <Compile Include="Internal\OperatorPolicyImpl.cs" />
+        <Compile Include="Internal\PolicyImpl.cs" />
+        <Compile Include="Internal\QueueImpl.cs" />
+        <Compile Include="Internal\ScopedParameterImpl.cs" />
+        <Compile Include="Internal\ServerImpl.cs" />
+        <Compile Include="Internal\ShovelImpl.cs" />
+        <Compile Include="Internal\SystemOverviewImpl.cs" />
+        <Compile Include="Internal\TopicPermissionsImpl.cs" />
+        <Compile Include="Internal\UserImpl.cs" />
+        <Compile Include="Internal\UserPermissionsImpl.cs" />
+        <Compile Include="Internal\VirtualHostImpl.cs" />
+        <Compile Include="Internal\VirtualHostLimitsImpl.cs" />
+        <Compile Include="Model\Application.cs" />
+        <Compile Include="Model\ArgumentValue.cs" />
+        <Compile Include="Model\AuthenticationMechanism.cs" />
+        <Compile Include="Model\BindingDefinition.cs" />
+        <Compile Include="Model\BindingInfo.cs" />
+        <Compile Include="Model\BrokerConnectionState.cs" />
+        <Compile Include="Model\BulkUserDeleteRequest.cs" />
+        <Compile Include="Model\ChannelDetails.cs" />
+        <Compile Include="Model\ChannelInfo.cs" />
+        <Compile Include="Model\ChannelOperationStats.cs" />
+        <Compile Include="Model\ChannelState.cs" />
+        <Compile Include="Model\ChurnRates.cs" />
+        <Compile Include="Model\ClusterObjectTotals.cs" />
+        <Compile Include="Model\ConnectionCapabilities.cs" />
+        <Compile Include="Model\ConnectionClientProperties.cs" />
+        <Compile Include="Model\ConnectionDetails.cs" />
+        <Compile Include="Model\ConnectionInfo.cs" />
+        <Compile Include="Model\ConnectionType.cs" />
+        <Compile Include="Model\ConsumerInfo.cs" />
+        <Compile Include="Model\ExchangeDefinition.cs" />
+        <Compile Include="Model\ExchangeInfo.cs" />
+        <Compile Include="Model\ExchangeRequest.cs" />
+        <Compile Include="Model\ExchangeType.cs" />
+        <Compile Include="Model\GarbageCollectionDetails.cs" />
+        <Compile Include="Model\GarbageCollectionMetrics.cs" />
+        <Compile Include="Model\GlobalParameterDefinition.cs" />
+        <Compile Include="Model\GlobalParameterInfo.cs" />
+        <Compile Include="Model\Listener.cs" />
+        <Compile Include="Model\MemoryInfo.cs" />
+        <Compile Include="Model\MessageStats.cs" />
+        <Compile Include="Model\NodeContext.cs" />
+        <Compile Include="Model\NodeHealthInfo.cs" />
+        <Compile Include="Model\NodeInfo.cs" />
+        <Compile Include="Model\NodeMemoryUsageInfo.cs" />
+        <Compile Include="Model\NodeStatus.cs" />
+        <Compile Include="Model\OperatorPolicyInfo.cs" />
+        <Compile Include="Model\OperatorPolicyRequest.cs" />
+        <Compile Include="Model\PolicyDefinition.cs" />
+        <Compile Include="Model\PolicyInfo.cs" />
+        <Compile Include="Model\PolicyRequest.cs" />
+        <Compile Include="Model\QueueConsumerDetails.cs" />
+        <Compile Include="Model\QueueDefinition.cs" />
+        <Compile Include="Model\QueueRequest.cs" />
+        <Compile Include="Model\QueueStats.cs" />
+        <Compile Include="Model\QueueSyncRequest.cs" />
+        <Compile Include="Model\Rate.cs" />
+        <Compile Include="Model\SampleRetentionPolicies.cs" />
+        <Compile Include="Model\ScopedParameterDefinition.cs" />
+        <Compile Include="Model\ScopedParameterInfo.cs" />
+        <Compile Include="Model\ScopedParameterRequest.cs" />
+        <Compile Include="Model\ServerHealthInfo.cs" />
+        <Compile Include="Model\ServerInfo.cs" />
+        <Compile Include="Model\ShovelInfo.cs" />
+        <Compile Include="Model\ShovelRequest.cs" />
+        <Compile Include="Model\ShovelRequestParams.cs" />
+        <Compile Include="Model\ShovelState.cs" />
+        <Compile Include="Model\ShovelType.cs" />
+        <Compile Include="Model\SocketOptions.cs" />
+        <Compile Include="Model\SystemOverviewInfo.cs" />
+        <Compile Include="Model\TopicPermissionsInfo.cs" />
+        <Compile Include="Model\TopicPermissionsRequest.cs" />
+        <Compile Include="Model\TotalMemoryInfo.cs" />
+        <Compile Include="Model\UserAccessTag.cs" />
+        <Compile Include="Model\UserDefinition.cs" />
+        <Compile Include="Model\UserInfo.cs" />
+        <Compile Include="Model\UserPermissionsDefinition.cs" />
+        <Compile Include="Model\UserPermissionsInfo.cs" />
+        <Compile Include="Model\UserPermissionsRequest.cs" />
+        <Compile Include="Model\UserRequest.cs" />
+        <Compile Include="Model\VirtualHostDefinition.cs" />
+        <Compile Include="Model\VirtualHostInfo.cs" />
+        <Compile Include="Model\VirtualHostLimitsInfo.cs" />
+        <Compile Include="Model\VirtualHostLimitsRequest.cs" />
+        <Compile Include="Model\VirtualHostMessageStats.cs" />
+        <Compile Include="Model\VirtualHostRequest.cs" />
+        <Compile Include="Node.cs" />
+        <Compile Include="OperatorPolicy.cs" />
+        <Compile Include="OperatorPolicyAppliedTo.cs" />
+        <Compile Include="OperatorPolicyConfigurator.cs" />
+        <Compile Include="Policy.cs" />
+        <Compile Include="PolicyAppliedTo.cs" />
+        <Compile Include="PolicyConfiguration.cs" />
+        <Compile Include="PolicyConfigurator.cs" />
+        <Compile Include="PolicyCreateAction.cs" />
+        <Compile Include="PolicyDefinitionArguments.cs" />
+        <Compile Include="PolicyDeleteAction.cs" />
+        <Compile Include="PolicyTarget.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Queue.cs" />
+        <Compile Include="QueueArgumentConfigurator.cs" />
+        <Compile Include="QueueConfiguration.cs" />
+        <Compile Include="QueueConfigurator.cs" />
+        <Compile Include="QueueCreateAction.cs" />
+        <Compile Include="QueueCreateArguments.cs" />
+        <Compile Include="QueueCreateTarget.cs" />
+        <Compile Include="QueueDeleteAction.cs" />
+        <Compile Include="QueueDeleteCondition.cs" />
+        <Compile Include="QueueDeletionConfigurator.cs" />
+        <Compile Include="QueueEmptyAction.cs" />
+        <Compile Include="QueueInfo.cs" />
+        <Compile Include="QueueMessageStats.cs" />
+        <Compile Include="QueueMode.cs" />
+        <Compile Include="QueuePromotionFailureMode.cs" />
+        <Compile Include="QueuePromotionShutdownMode.cs" />
+        <Compile Include="QueueState.cs" />
+        <Compile Include="QueueSyncAction.cs" />
+        <Compile Include="QueueTarget.cs" />
+        <Compile Include="ScopedParameter.cs" />
+        <Compile Include="ScopedParameterCreateAction.cs" />
+        <Compile Include="ScopedParameterDeleteAction.cs" />
+        <Compile Include="ScopedParameterTarget.cs" />
+        <Compile Include="Serialization\Converters\AckModeEnumConverter.cs" />
+        <Compile Include="Serialization\Converters\CustomDateTimeConverter.cs" />
+        <Compile Include="Serialization\Converters\CustomDecimalConverter.cs" />
+        <Compile Include="Serialization\Converters\CustomLongConverter.cs" />
+        <Compile Include="Serialization\Converters\CustomStringConverter.cs" />
+        <Compile Include="Serialization\Converters\InconsistentObjectDataConverter.cs" />
+        <Compile Include="Serialization\Converters\QueueSyncActionEnumConverter.cs" />
+        <Compile Include="Serialization\Deserializer.cs" />
+        <Compile Include="Server.cs" />
+        <Compile Include="Shovel.cs" />
+        <Compile Include="ShovelConfigurator.cs" />
+        <Compile Include="ShovelDestinationConfigurator.cs" />
+        <Compile Include="ShovelProtocolType.cs" />
+        <Compile Include="ShovelSourceConfigurator.cs" />
+        <Compile Include="SystemOverview.cs" />
+        <Compile Include="TopicPermissions.cs" />
+        <Compile Include="TopicPermissionsConfiguration.cs" />
+        <Compile Include="TopicPermissionsConfigurator.cs" />
+        <Compile Include="TopicPermissionsCreateAction.cs" />
+        <Compile Include="TopicPermissionsDefinition.cs" />
+        <Compile Include="TopicPermissionsDeleteAction.cs" />
+        <Compile Include="User.cs" />
+        <Compile Include="UserAccessOptions.cs" />
+        <Compile Include="UserConfigurator.cs" />
+        <Compile Include="UserCreateAction.cs" />
+        <Compile Include="UserDeleteAction.cs" />
+        <Compile Include="UserPermissions.cs" />
+        <Compile Include="UserPermissionsConfiguration.cs" />
+        <Compile Include="UserPermissionsConfigurator.cs" />
+        <Compile Include="UserPermissionsCreateAction.cs" />
+        <Compile Include="UserPermissionsDeleteAction.cs" />
+        <Compile Include="UserPermissionsTarget.cs" />
+        <Compile Include="VirtualHost.cs" />
+        <Compile Include="VirtualHostConfigurator.cs" />
+        <Compile Include="VirtualHostConfigureLimitsAction.cs" />
+        <Compile Include="VirtualHostCreateAction.cs" />
+        <Compile Include="VirtualHostDeleteAction.cs" />
+        <Compile Include="VirtualHostDeleteLimitsAction.cs" />
+        <Compile Include="VirtualHostLimits.cs" />
+        <Compile Include="VirtualHostLimitsConfiguration.cs" />
+        <Compile Include="VirtualHostLimitsConfigurator.cs" />
+        <Compile Include="VirtualHostLimitsDefinition.cs" />
+        <Compile Include="VirtualHostStartupAction.cs" />
+        <Compile Include="VirtualHostTagConfigurator.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\HareDu.Core\HareDu.Core.csproj">
+        <Project>{c3078124-5ce7-4268-be63-aa848b931dd5}</Project>
+        <Name>HareDu.Core</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

@@ -1,0 +1,46 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MsbuildVersion/@EntryValue">4294967293</s:Int64>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/15.0/bin/MSBuild.dll</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eb02e989_002D3d11_002D4c71_002Da464_002D7ff004e3f385/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="BindingsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.BindingsTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.BrokerObjectFactoryTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.BrokerSystemTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ChannelTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ConnectionTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ConsumerTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ExchangeTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewChannelTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewConnectionTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewExchangeTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewGlobalParameterTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewNodeTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewPolicyTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewQueueTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewScopedParameterTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewServerTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewTopicPermissionsTest&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewUserPermissionsTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewVirtualHostLimitsTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NewVirtualHostTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.NodeTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.OperatorPolicyTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.PolicyTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.QueueTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ScopedParameterTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ServerTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.ShovelTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.SystemOverviewTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.UserPermissionsTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.UserTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.VirtualHostLimitsTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::AAFA4632-8B5B-40E3-90DC-87AAC71AF9DC::.NETFramework,Version=v4.6.2::HareDu.Tests.VirtualHostTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::53DE4AFB-884D-4457-994D-83AF2E2B513A::.NETFramework,Version=v4.6.2::HareDu.IntegrationTests.BindingsTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::53DE4AFB-884D-4457-994D-83AF2E2B513A::.NETFramework,Version=v4.6.2::HareDu.IntegrationTests.QueueTests.Should_be_able_to_get_all_queues&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/albert/Documents/Git/HareDu/src/HareDu.Snapshotting.Tests" Presentation="&amp;lt;Testing&amp;gt;\&amp;lt;Unit&amp;gt;\&amp;lt;HareDu.Snapshotting.Tests&amp;gt;" /&gt;
+    &lt;Project Location="/Users/albert/Documents/Git/HareDu/src/HareDu.Diagnostics.Tests" Presentation="&amp;lt;Testing&amp;gt;\&amp;lt;Unit&amp;gt;\&amp;lt;HareDu.Diagnostics.Tests&amp;gt;" /&gt;
+    &lt;Project Location="/Users/albert/Documents/Git/HareDu/src/HareDu.Tests" Presentation="&amp;lt;Testing&amp;gt;\&amp;lt;Unit&amp;gt;\&amp;lt;HareDu.Tests&amp;gt;" /&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
