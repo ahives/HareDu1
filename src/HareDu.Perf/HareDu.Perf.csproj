@@ -264,6 +264,8 @@
         <Compile Include="BenchmarkConfig.cs" />
         <Compile Include="Benchmarks\CreateBenchmarks.cs" />
         <Compile Include="Benchmarks\GetAllBindingsBenchmarks.cs" />
+        <Compile Include="Benchmarks\GetAllChannelBenchmarks.cs" />
+        <Compile Include="Benchmarks\GetSystemOverviewBenchmarks.cs" />
         <Compile Include="HareDuPerformanceTesting.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -309,9 +311,6 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
       <Content Include="Benchmarks\TestData\MemoryUsageInfo.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Content>
-      <Content Include="Benchmarks\TestData\NewSystemOverviewInfo.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
       <Content Include="Benchmarks\TestData\NodeHealthInfo.json">

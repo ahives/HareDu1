@@ -1,5 +1,5 @@
 {
-  "management_version": "3.7.15",
+  "management_version": "3.8.9",
   "rates_mode": "basic",
   "sample_retention_policies": {
     "global": [
@@ -38,10 +38,14 @@
       "enabled": true
     }
   ],
-  "rabbitmq_version": "3.7.15",
+  "product_version": "3.8.9",
+  "product_name": "RabbitMQ",
+  "rabbitmq_version": "3.8.9",
   "cluster_name": "rabbit@haredu",
-  "erlang_version": "22.0.4",
-  "erlang_full_version": "Erlang/OTP 22 [erts-10.4.3] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:64] [hipe] [dtrace]",
+  "erlang_version": "23.2",
+  "erlang_full_version": "Erlang/OTP 23 [erts-11.1.4] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:64] [hipe] [dtrace]",
+  "disable_stats": false,
+  "enable_queue_totals": false,
   "message_stats": {
     "ack": 200000,
     "ack_details": {
@@ -192,6 +196,19 @@
     },
     {
       "node": "rabbit@localhost",
+      "protocol": "http/prometheus",
+      "ip_address": "::",
+      "port": 15692,
+      "socket_opts": {
+        "cowboy_opts": {
+          "sendfile": false
+        },
+        "port": 15692,
+        "protocol": "http/prometheus"
+      }
+    },
+    {
+      "node": "rabbit@localhost",
       "protocol": "stomp",
       "ip_address": "::",
       "port": 61613,
@@ -209,6 +226,15 @@
       "path": "/",
       "cowboy_opts": "[{sendfile,false}]",
       "port": "15672"
+    },
+    {
+      "ssl_opts": [],
+      "node": "rabbit@localhost",
+      "description": "RabbitMQ Prometheus",
+      "path": "/",
+      "cowboy_opts": "[{sendfile,false}]",
+      "port": "15692",
+      "protocol": "'http/prometheus'"
     }
   ]
 }
